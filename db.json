@@ -1,6 +1,11 @@
 {
   "users": [
-    { "id": "42", "firstName": "maimous", "age": 123 },
-    { "id": "43", "firstName": "kokokos", "age": 321 }
+    { "id": "42", "firstName": "maimous", "age": 123, "companyId": "1" },
+    { "id": "43", "firstName": "kokokos", "age": 321, "companyId": "2" },
+    { "id": "44", "firstName": "kangour", "age": 555, "companyId": "1" }
+  ],
+  "companies": [
+    { "id": "1", "name": "ECorp", "description": "Evol Corporation" },
+    { "id": "2", "name": "CocaColon", "description": "Pablo Escoblabla" }
   ]
 }
