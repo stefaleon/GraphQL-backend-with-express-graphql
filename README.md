@@ -27,3 +27,15 @@ Queries
   }
 }
 ```
+
+```
+{
+  company(id: "2 ") {
+    name,
+    description ,
+    users {id, firstName, company {
+      id, name
+    } }
+  }
+}
+```
