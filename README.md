@@ -129,3 +129,19 @@ mutation {
   }
 }
 ```
+
+```
+mutation {
+  deleteUser(id:"44") { id }
+}
+
+----------------- This returns -----------------
+
+{
+  "data": {
+    "deleteUser": {
+      "id": null
+    }
+  }
+}
+```
