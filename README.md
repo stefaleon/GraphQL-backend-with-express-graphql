@@ -111,3 +111,21 @@ fragment companyDetails on Company {
   }
 }
 ```
+
+```
+mutation {
+  addUser(firstName: "Another" age:987) {id firstName age}
+}
+
+----------------- This returns -----------------
+
+{
+  "data": {
+    "addUser": {
+      "id": "FWa456t",
+      "firstName": "Another",
+      "age": 987
+    }
+  }
+}
+```
