@@ -145,3 +145,27 @@ mutation {
   }
 }
 ```
+
+```
+mutation {
+  editUser(id: "43" firstName: "gotziras") {id firstName age company {
+    id name
+  }}
+}
+
+----------------- This returns -----------------
+
+{
+  "data": {
+    "editUser": {
+      "id": "43",
+      "firstName": "gotziras",
+      "age": 321,
+      "company": {
+        "id": "2",
+        "name": "CocaColon"
+      }
+    }
+  }
+}
+```
